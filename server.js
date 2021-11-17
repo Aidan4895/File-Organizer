@@ -18,6 +18,8 @@ app.post('/action_page.php', function(req, res){
     res.render('organizer2', {
       yell: `You submitted: ${req.body.file}`
     })
+  } else{
+    res.redirect("/")
   }
 })
 var server = app.listen(8000, function(){
