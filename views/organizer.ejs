@@ -12,5 +12,7 @@
       <input type="submit">
     </form>
 
+    <p> Uploaded Files </p>
+    <% for (filename in filelist) { %> <p>  <%= filelist[filename] %> <br></p>  <% } %>
   </body>
 </html>
