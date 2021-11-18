@@ -30,10 +30,7 @@ app.post('/action_page.php', upload.single('filename'), function (req, res, next
     res.render('organizer2', {
       yell: `You submitted: ${req.body.file}`
     })
-  } else {
-    res.render('organizer2', {
-      yell: `AAAAHAHHHHHHH!!!!`
-    })
+
   }
 })
 */
